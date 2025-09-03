@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sapientia University Login</title>
+  <link rel="stylesheet" href="signup.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <div class="logo-box">
+          <img src="img/silver-removebg.png" alt="logo">
+        </div>
+        <span class="logo-text">Sapientia University</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container signup-container">
+    <h1>Sign-Up</h1>
+
+    <form id="signup-form" novalidate>
+      <label for="fullname">Fullname</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="username">Username: </label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phoneNumber">phoneNumber</label>
+      <input type="text" id="phoneNumber" name="phoneNumber" required>
+
+      <label for="password">Password *</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+      <label for="gender">Gender</label>
+      <span><input type="radio" name="gender" value="male">Male</span>
+      <span><input type="radio" name="gender" value="female">Female</span>
+
+
+      <button type="submit" class="btn sign-btn">Sign Up</button>
+    </form>
+  </main>
+
+  <script src="signup.js"></script>
+</body>
+
+</html>

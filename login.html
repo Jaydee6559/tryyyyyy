@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sapientia University Login</title>
+  <link rel="stylesheet" href="login.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <div class="logo-box">
+          <img src="img/silver-removebg.png" alt="logo">
+        </div>
+        <span class="logo-text">Sapientia University</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container login-container">
+    <h1>Login</h1>
+
+    <form id="login-form" novalidate>
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password *</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit" class="btn login-btn">Login</button>
+      <p></p>
+      <p><a href="signup.html">I don't have an account yet... </a></p>
+    </form>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+
+</html>

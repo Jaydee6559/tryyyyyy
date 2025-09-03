@@ -1,0 +1,150 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f9fafb;
+  color: #374151;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding-top: 4.5rem;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.header {
+  background: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-box {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-box img {
+  width: 9rem;
+  height: 4rem;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+/* Login Container */
+.login-container {
+  background: white;
+  padding: 2rem 2rem 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.login-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #124559;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #124559;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.125rem;
+  border-radius: 9999px;
+  border: none;
+  background-color: #124559;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover:not(:disabled) {
+  background-color: #1b6380;
+}
+
+.login-btn:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1.5rem 1rem 2rem;
+  }
+}

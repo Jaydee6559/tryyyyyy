@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sapientia University</title>
+  <link rel="stylesheet" href="register.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Student Registration</h1>
+
+    <ul class="progressbar">
+      <li class="active">Personal Info</li>
+      <li>Family & Education</li>
+      <li>Upload Documents</li>
+      <li>Consent Forms</li>
+    </ul>
+
+    <form id="registrationForm" enctype="multipart/form-data" novalidate>
+      <!-- Step 1: Personal Info -->
+      <div class="form-step active">
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" required />
+
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname" required />
+
+        <label for="middlename">Middle Name</label>
+        <input type="text" id="middlename" name="middlename" />
+
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" name="birthday" required />
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="0" max="120" required />
+
+        <label for="birthplace">Place of Birth</label>
+        <input type="text" id="birthplace" name="birthplace" required />
+
+        <label for="sex">Sex</label>
+        <select id="sex" name="sex" required>
+          <option value="" disabled selected>Select sex</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="civilstatus">Civil Status</label>
+        <select id="civilstatus" name="civilstatus" required>
+          <option value="" disabled selected>Select civil status</option>
+          <option value="Single">Single</option>
+          <option value="Married">Married</option>
+          <option value="Widowed">Widowed</option>
+          <option value="Separated">Separated</option>
+        </select>
+
+        <label for="nationality">Nationality</label>
+        <input type="text" id="nationality" name="nationality" required />
+
+        <label for="citizenship">Citizenship</label>
+        <input type="text" id="citizenship" name="citizenship" required />
+
+        <label for="religion">Religion</label>
+        <input type="text" id="religion" name="religion" />
+
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required />
+
+        <label for="contactinfo">Contact Info</label>
+        <input type="text" id="contactinfo" name="contactinfo" required />
+      </div>
+
+      <!-- Step 2: Family & Education -->
+      <div class="form-step">
+        <div class="checkbox-group">
+          <input type="checkbox" id="indigenous" name="indigenous" />
+          <label for="indigenous">Part of Indigenous Group or 4Ps</label>
+        </div>
+
+        <label for="studentstatus">Student Status</label>
+        <select id="studentstatus" name="studentstatus" required>
+          <option value="" disabled selected>Select status</option>
+          <option value="Freshman">Freshman</option>
+          <option value="Transferee">Transferee</option>
+          <option value="Continuing">Continuing</option>
+        </select>
+
+        <label for="schoolyear">School Year</label>
+        <select id="schoolyear" name="schoolyear" required>
+          <option value="" disabled selected>Select school year</option>
+        </select>
+
+        <label for="program1">1st Program Choice</label>
+        <input type="text" id="program1" name="program1" required />
+
+        <label for="program2">2nd Program Choice</label>
+        <input type="text" id="program2" name="program2" />
+
+        <label for="yearlevel">Year Level</label>
+        <select id="yearlevel" name="yearlevel" required>
+          <option value="" disabled selected>Select year level</option>
+          <option value="1st Year">1st Year</option>
+          <option value="2nd Year">2nd Year</option>
+          <option value="3rd Year">3rd Year</option>
+          <option value="4th Year">4th Year</option>
+        </select>
+
+        <label for="lastschool">Last School Attended</label>
+        <input type="text" id="lastschool" name="lastschool" required />
+
+        <label for="lastsy">Last School Year Enrolled</label>
+        <input type="text" id="lastsy" name="lastsy" placeholder="e.g. 2022-2023" required />
+
+        <label for="schooladdress">School Address</label>
+        <input type="text" id="schooladdress" name="schooladdress" required />
+      </div>
+
+      <!-- Step 3: Uploading Requirements -->
+      <div class="form-step">
+        <label for="picture2x2">2x2 Picture (JPEG/PNG)</label>
+        <input type="file" id="picture2x2" name="picture2x2" accept="image/jpeg,image/png" required />
+
+        <label for="birthcertificate">Birth Certificate (PDF/JPEG/PNG)</label>
+        <input type="file" id="birthcertificate" name="birthcertificate" accept="application/pdf,image/jpeg,image/png"
+          required />
+
+        <label for="goodmoral">Certificate of Good Moral (PDF/JPEG/PNG)</label>
+        <input type="file" id="goodmoral" name="goodmoral" accept="application/pdf,image/jpeg,image/png" required />
+
+        <label for="grades">Grades (PDF/JPEG/PNG)</label>
+        <input type="file" id="grades" name="grades" accept="application/pdf,image/jpeg,image/png" required />
+
+        <label for="diploma">Diploma (PDF/JPEG/PNG)</label>
+        <input type="file" id="diploma" name="diploma" accept="application/pdf,image/jpeg,image/png" required />
+      </div>
+
+      <!-- Step 4: Consent Forms -->
+      <div class="form-step">
+        <h3>Student Parental Consent Form</h3>
+        <div class="consent-text" tabindex="0">
+          The Student acknowledges and agrees to the following:
+          Code of Conduct: The Student will abide by all University policies, rules, and regulations, including but not
+          limited to the Student Code of Conduct, Academic Honor Code, and any specific rules related to the program.
+          Academic Performance: The Student is responsible for maintaining satisfactory academic progress and meeting
+          all requirements of their courses and program of study.
+          Health and Safety: The Student will take all reasonable precautions for their own health and safety and will
+          follow all safety instructions provided by the University or its representatives.
+          Emergency Contact Information: The Student will provide accurate and up-to-date emergency contact information
+          for themselves and their Parent/Guardian.
+
+          The Parent/Guardian acknowledges and agrees to the following:
+          Financial Responsibility: The Parent/Guardian is financially responsible for all tuition, fees, and related
+          costs associated with the Student's participation in the program, including any and all unexpected costs or
+          expenses that may arise.
+          Student's Adult Status: The Parent/Guardian acknowledges that the Student is an adult (18 years of age or
+          older) and that the University's ability to share information regarding the Student's academic and
+          disciplinary records is governed by the Data Privacy Act of 2012 (Republic Act No. 10173).
+          Waiver of Liability: The Parent/Guardian, to the fullest extent permitted by Philippine law, agrees to waive,
+          release, and hold harmless the University and its employees from any and all claims, liabilities, or damages
+          arising from the Student's participation.
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="studentConsent" name="studentConsent" required />
+          <label for="studentConsent">I acknowledge and agree to the Student Parental Consent Form</label>
+        </div>
+
+        <h3>Data Privacy Consent for College Students</h3>
+        <div class="consent-text" tabindex="0">
+          The Parties agree to the following consent provisions:
+
+          Medical Consent
+          In the event of a medical emergency, injury, or illness requiring immediate medical attention, the undersigned
+          Student and Parent/Guardian hereby consent to any necessary medical treatment, including but not limited to,
+          administration of anesthesia, medical or surgical procedures, and hospitalization, as deemed necessary by a
+          qualified medical professional. The University is authorized to act on behalf of the Student in such an
+          emergency and to contact the Parent/Guardian.
+          Data Privacy Consent (Republic Act No. 10173)
+
+          The Student, being of legal age, hereby gives their voluntary consent to the University to collect, process,
+          use, and store their personal information for the following purposes:
+          Enrollment, admission, and academic records management.
+          Processing of fees, scholarships, and financial aid.
+          Provision of University services, including library, student affairs, and health services.
+          Issuance of identification cards, transcripts, and diplomas.
+          Disciplinary and administrative purposes.
+          Compilation of statistical data and reports for internal use.
+          Communicating with the Student and Parent/Guardian regarding University matters.
+
+          The Student understands that the personal information collected may include, but is not limited to, academic
+          records, contact details, medical information, and any data provided for the purposes listed above. The
+          University is committed to protecting this data in accordance with its privacy policies and the Data Privacy
+          Act of 2012 (RA No. 10173).
+          Academic and Disciplinary Record Consent
+          The Student, being of legal age, voluntarily consents and authorizes the University to share the following
+          academic and/or disciplinary information with the undersigned Parent/Guardian:
+          Academic records, including grades, GPA, and transcripts.
+          Disciplinary records, including violations of the student code of conduct and related outcomes.
+          This consent shall remain in effect for the duration of the student's enrollment unless revoked in writing.
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="dataPrivacyConsent" name="dataPrivacyConsent" required />
+          <label for="dataPrivacyConsent">I acknowledge and agree to the Data Privacy Consent for College
+            Students</label>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" id="prevBtn" disabled>Previous</button>
+        <button type="button" id="nextBtn">Next</button>
+        <button type="button" id="backHomeBtn">Back to Homepage</button>
+      </div>
+    </form>
+  </div>
+  <script src="register.js"></script>
+</body>
+
+</html>

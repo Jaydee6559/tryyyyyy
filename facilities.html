@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facilities - Sapientia University</title>
+  <link rel="stylesheet" href="facilities.css">
+  <script src="facilities.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <div class="logo-box">
+          <img src="img/silver-removebg.png" alt="">
+        </div>
+        <span class="logo-text">Sapientia University</span>
+      </div>
+
+      <nav class="nav desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#programs">Programs</a>
+        <a href="index.html#team">Team</a>
+        <a href="index.html#campus">Campus Life</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <button class="btn apply-btn desktop-apply-btn">Apply Now</button>
+      <a href="login.html" class="profile-circle" aria-label="Login">
+        <i class="fas fa-user"></i>
+      </a>
+
+      <button id="mobile-menu-button" class="mobile-menu-btn" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <nav id="mobile-menu" class="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#programs">Programs</a>
+      <a href="index.html#team">Team</a>
+      <a href="index.html#campus">Campus Life</a>
+      <a href="index.html#contact">Contact</a>
+      <button class="btn apply-btn mobile-apply-btn">Apply Now</button>
+    </nav>
+  </header>
+
+  <main class="container facilities-container">
+    <section class="facilities-hero">
+      <h1>University Facilities</h1>
+      <p>Discover our state-of-the-art facilities designed to provide the best learning environment and student
+        experience</p>
+    </section>
+
+    <section class="facilities-grid">
+      <!-- Auditorium -->
+      <div class="facility-card">
+        <div class="facility-image">
+          <img src="img/auditorium.jpg"
+            alt="Modern university auditorium with comfortable seating and professional lighting">
+        </div>
+        <div class="facility-content">
+          <h2>Auditorium</h2>
+          <p>Our 500-seat auditorium features cutting-edge audio-visual equipment, perfect for lectures, seminars,
+            conferences, and cultural events. Equipped with professional lighting and sound systems.</p>
+          <div class="facility-features">
+            <span><i class="fas fa-users"></i> 500 Seats</span>
+            <span><i class="fas fa-microphone"></i> AV System</span>
+            <span><i class="fas fa-film"></i> Projection</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Garden -->
+      <div class="facility-card">
+        <div class="facility-image">
+          <img src="img/garden.jpg" alt="Beautiful university garden with benches and walking paths">
+        </div>
+        <div class="facility-content">
+          <h2>Garden</h2>
+          <p>A peaceful oasis in the heart of campus featuring indigenous plants, walking paths, and sitting areas.
+            Perfect for studying, relaxing, or enjoying nature between classes.</p>
+          <div class="facility-features">
+            <span><i class="fas fa-tree"></i> Native Plants</span>
+            <span><i class="fa-solid fa-couch"></i></i> Seating Areas</span>
+            <span><i class="fas fa-walking"></i> Walking Paths</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cafeteria -->
+      <div class="facility-card">
+        <div class="facility-image">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80"
+            alt="Modern university cafeteria with various food stations">
+        </div>
+        <div class="facility-content">
+          <h2>Cafeteria</h2>
+          <p>Our spacious cafeteria offers a variety of healthy and delicious meals, snacks, and beverages. Features
+            multiple food stations, comfortable seating, and a welcoming atmosphere.</p>
+          <div class="facility-features">
+            <span><i class="fas fa-utensils"></i> Multiple Cuisines</span>
+            <span><i class="fas fa-coffee"></i> Coffee Bar</span>
+            <span><i class="fas fa-wifi"></i> Free WiFi</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chapel -->
+      <div class="facility-card">
+        <div class="facility-image">
+          <img src="img/chapel.jpg" alt="Peaceful university chapel with stained glass windows">
+        </div>
+        <div class="facility-content">
+          <h2>Chapel</h2>
+          <p>A serene space for prayer, meditation, and spiritual reflection. Open to all faiths and beliefs, providing
+            a quiet retreat for students, faculty, and staff.</p>
+          <div class="facility-features">
+            <span><i class="fas fa-pray"></i> Meditation</span>
+            <span><i class="fas fa-music"></i> Music</span>
+            <span><i class="fas fa-peace"></i> Peaceful</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Computer Laboratory -->
+      <div class="facility-card">
+        <div class="facility-image">
+          <img src="img/computer laboratory.jpg" alt="Modern computer lab with high-end workstations">
+        </div>
+        <div class="facility-content">
+          <h2>Computer Laboratory</h2>
+          <p>State-of-the-art computer lab equipped with high-performance workstations, specialized software, and
+            high-speed internet. Open for academic use and research projects.</p>
+          <div class="facility-features">
+            <span><i class="fas fa-desktop"></i> High-end PCs</span>
+            <span><i class="fas fa-bolt"></i> High-speed Internet</span>
+            <span><i class="fas fa-print"></i> Printing Services</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PE Center -->
+      <div class="facility-card">
+        <div class="facility-image">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80"
+            alt="University sports center with basketball court and fitness equipment">
+        </div>
+        <div class="facility-content">
+          <h2>PE Center</h2>
+          <p>Comprehensive sports and fitness facility featuring gym equipment, basketball courts, indoor track, and
+            training areas. Supports both competitive sports and recreational activities.</p>
+          <div class="facility-features">
+            <span><i class="fas fa-basketball-ball"></i> Courts</span>
+            <span><i class="fas fa-dumbbell"></i> Gym Equipment</span>
+            <span><i class="fas fa-running"></i> Track</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Library -->
+      <div class="facility-card">
+        <div class="facility-image">
+          <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=600&q=80"
+            alt="Modern university library with study areas and bookshelves">
+        </div>
+        <div class="facility-content">
+          <h2>Library</h2>
+          <p>A vast collection of academic resources, digital databases, and quiet study areas. Features group study
+            rooms, computer access, and research assistance services.</p>
+          <div class="facility-features">
+            <span><i class="fas fa-book"></i> 100K+ Books</span>
+            <span><i class="fas fa-laptop"></i> Study Spaces</span>
+            <span><i class="fas fa-database"></i> Digital Resources</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div class="footer-section footer-about">
+        <div class="footer-logo">
+          <div class="logo-box">
+            <img src="img/silver-removebg.png" alt="">
+          </div>
+          <span class="logo-text">Sapientia University</span>
+        </div>
+        <p>
+          Excellence in education since 1959. Preparing future leaders through
+          innovative teaching and research.
+        </p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#faculty">Faculty</a></li>
+          <li><a href="#campus">Campus Life</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="admission.html">Admissions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <address class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> 701 Virginia Summerville Avenue, Pasig City, 1609 Metro Manila</p>
+          <p><i class="fas fa-phone"></i> +63 (0)-12341-223</p>
+          <p><i class="fas fa-envelope"></i> rgs@su.edu.ph</p>
+        </address>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Sapientia University. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
